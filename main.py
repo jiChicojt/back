@@ -14,7 +14,7 @@ from routes import solver
 if __name__ == "__main__":
     app.run(debug = True,threaded = True)
     
-@app.route('/message', methods = ['GET'])
+@app.route('/', methods = ['GET'])
 def message():
     return {"message": "All good"}
 
